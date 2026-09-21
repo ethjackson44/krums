@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8e9" />
+  <meta name="description" content="krums — thin, crispy cookie dough snacks. All snacks leave krums." />
+  <title>krums — All Snacks Leave Krums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-loader" id="page-loader" aria-hidden="true"><b class="krums-monogram">K</b><span>Leaving a few krums…</span></div>
+
+  <div class="announcement">
+    <button aria-label="Previous announcement" data-announcement="-1">←</button>
+    <p id="announcement-copy">Free shipping on snack boxes over $35</p>
+    <button aria-label="Next announcement" data-announcement="1">→</button>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+    <a class="brand" href="#top" aria-label="krums home"><span class="krums-wordmark">krums</span></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="#shop">Shop</a><a href="#why">Why krums</a><a href="#story">Our story</a><a href="#faq">FAQ</a>
+    </nav>
+    <button class="bag-button" id="open-cart" aria-label="Open snack bag">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main id="main">
+    <section class="hero flavor-theme" id="top" data-theme="chocolate-chip">
+      <div class="hero-grain"></div><div class="hero-sun" aria-hidden="true"></div>
+      <div class="hero-copy reveal"><h1>All snacks<br />leave Krums.</h1><p class="hero-lede">Thin, crispy cookie dough snacks in three craveable flavors.</p><div class="hero-actions"><a class="button button-primary magnetic" href="#shop">Shop Krums</a><a class="text-button" href="#why">Why krums</a></div><div class="hero-proof"><div><strong>6g</strong><span>fiber</span></div><div><strong>4g</strong><span>net carbs</span></div><div><strong>100%</strong><span>snackable</span></div></div><div class="hero-flavor-switcher" role="group" aria-label="Preview a flavor"><button class="flavor-choice active" data-flavor="chocolate-chip"><i style="--dot:#a17b4e"></i>Chocolate Chip</button><button class="flavor-choice" data-flavor="birthday-cake"><i style="--dot:#9b6b94"></i>Birthday Cake</button><button class="flavor-choice" data-flavor="cinnamon-roll"><i style="--dot:#a14d2b"></i>Cinnamon Roll</button></div></div>
+      <div class="hero-product reveal" data-delay="150"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="product-stage" id="hero-stage"><div class="stage-shadow"></div><img id="hero-pouch" src="assets/pouch-krums-chocolate-chip.png" alt="Chocolate Chip krums pouch" /></div></div>
+    </section>
+
+    <div class="joy-marquee" aria-hidden="true"><div><span>ALL SNACKS LEAVE KRUMS</span> ✦ <span>CRUNCH HAPPY</span> • <span>PASS THE BAG</span> ✦ <span>LEAVE A FEW KRUMS</span> • <span>ALL SNACKS LEAVE KRUMS</span> ✦ <span>CRUNCH HAPPY</span> • <span>PASS THE BAG</span> ✦ <span>LEAVE A FEW KRUMS</span> •</div></div>
+
+    <section class="flavor-shop flavor-theme" id="shop" data-theme="chocolate-chip">
+      <div class="shop-heading reveal"><p class="eyebrow"><span></span> Shop all Krums</p><h2>Pick your crunch.</h2><p>Explore every Krums product in one place.</p></div>
+      <div class="shop-grid" id="shop-grid" aria-label="All Krums products"></div>
+      <div class="spotlight reveal" id="product-spotlight">
+        <div class="spotlight-visual"><div class="blob"></div><img id="spotlight-pouch" src="assets/pouch-krums-chocolate-chip.png" alt="Chocolate Chip krums pouch" /></div>
+        <div class="spotlight-info"><p class="product-kicker" id="product-kicker">THE OG CRUNCH</p><h3 id="product-name">Chocolate Chip</h3><p class="stars">★★★★★ <span>4.9 · 127 happy snackers</span></p><p class="product-description" id="product-description">Buttery cookie dough crunch studded with rich chocolate chips. Classic comfort, wildly crispy.</p><div class="taste-notes" id="taste-notes"><span>Buttery</span><span>Chocolatey</span><span>Nostalgic</span></div><div class="product-variants" role="tablist" aria-label="Choose a flavor"><button class="variant-choice active" role="tab" aria-selected="true" data-flavor="chocolate-chip"><i style="--dot:#a17b4e"></i>Chocolate Chip</button><button class="variant-choice" role="tab" aria-selected="false" data-flavor="birthday-cake"><i style="--dot:#9b6b94"></i>Birthday Cake</button><button class="variant-choice" role="tab" aria-selected="false" data-flavor="cinnamon-roll"><i style="--dot:#a14d2b"></i>Cinnamon Roll</button></div><div class="purchase-row"><div><span>One 4oz pouch</span><strong id="product-price">$7.99</strong></div><div class="quantity"><button data-main-qty="-1" aria-label="Decrease quantity">−</button><span id="main-qty">1</span><button data-main-qty="1" aria-label="Increase quantity">+</button></div></div><button class="button button-primary add-main magnetic" id="add-main">Add to bag</button></div>
+      </div>
+    </section>
+
+    <section class="why" id="why"><div class="why-visual reveal"><img class="why-lifestyle" src="assets/moment-krums-desk.png" alt="Chocolate Chip Krums beside coffee on a sunlit desk" loading="lazy" /></div><div class="why-copy reveal"><h2>Why Krums</h2><div class="benefit-circles" aria-label="Krums product benefits"><article><b>Clean</b><span>ingredients</span><p>Simple ingredients chosen with care.</p></article><article><b>Non-GMO</b><span>made</span><p>No genetically modified ingredients.</p></article><article><b>Vegan</b><span>friendly</span><p>Plant-based and made for more snackers.</p></article><article><b>6g</b><span>fiber</span><p>Satisfying crunch with staying power.</p></article></div></div></section>
+
+    <section class="origin-story" id="story"><div class="story-year reveal" aria-hidden="true">2026</div><div class="story-copy reveal"><p class="eyebrow"><span></span> Our story</p><h2>A new kind of cookie crunch.</h2><p>Krums started in 2026 with one simple idea: cookie-dough flavor deserved a thinner, crispier way to snack.</p><p>We set out to make playful snacks with clean ingredients, bold flavor, and enough crunch to leave a trail.</p><a class="button button-primary" href="#shop">Meet the flavors</a></div></section>
+
+    <section class="social-proof"><div class="review-side"><p class="eyebrow light"><span></span> Love at first crunch</p><div class="review-score"><strong>4.9</strong><span>★★★★★<small>from very happy snackers</small></span></div><img class="review-mascot" src="assets/krums-mascot-transparent.png" alt="Krums mouse mascot" /></div><div class="review-slider" id="review-slider"><article class="review active"><blockquote>“It tastes like sneaking cookie dough, but somehow even more satisfying.”</blockquote><p>— MAYA R. <span>Verified snacker</span></p></article><article class="review"><blockquote>“The crunch is unreal. Birthday Cake disappeared before movie night started.”</blockquote><p>— ELLIE T. <span>Verified snacker</span></p></article><article class="review"><blockquote>“Cinnamon Roll with afternoon coffee is now a non-negotiable.”</blockquote><p>— CHRIS A. <span>Verified snacker</span></p></article><div class="review-controls"><button id="review-prev" aria-label="Previous review">←</button><button id="review-next" aria-label="Next review">→</button></div></div></section>
+
+    <section class="faq" id="faq"><div class="faq-heading reveal"><h2>Questions?<span>We’ve got krums.</span></h2></div><div class="faq-list reveal"><details><summary>What exactly are Krums?<span>+</span></summary><div class="faq-answer"><div><p>Krums are thin, crispy snacks inspired by cookie dough—the flavor of a cookie with the snap of a chip.</p></div></div></details><details><summary>Are they made from cookie dough?<span>+</span></summary><div class="faq-answer"><div><p>Krums are baked for crunch and formulated as a ready-to-eat snack. Final ingredient details will be published before launch.</p></div></div></details><details><summary>Where can I buy them?<span>+</span></summary><div class="faq-answer"><div><p>Right here soon. Check the Shop section to explore every available flavor.</p></div></div></details><details><summary>Do you ship nationwide?<span>+</span></summary><div class="faq-answer"><div><p>Nationwide shipping is the plan. Exact regions and timing will be confirmed at launch.</p></div></div></details></div></section>
+  </main>
+
+  <footer><div class="footer-brand"><span class="krums-wordmark">krums</span><p>All snacks leave krums.™</p></div><div><h3>Explore</h3><a href="#shop">Shop</a><a href="#story">Our story</a><a href="#faq">FAQ</a></div><div><h3>Say hello</h3><a href="mailto:hello@krumssnacks.com">Email us</a><a href="#">Instagram</a><a href="#">TikTok</a></div><p class="footer-legal">© <span id="year"></span> krums. All snacks leave krums.<br /><span>Concept site · Claims subject to verification.</span></p></footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag"><header><div><p class="eyebrow"><span></span> Your stash</p><h2>Snack bag <i id="cart-title-count">(0)</i></h2></div><button id="close-cart" aria-label="Close bag">×</button></header><div class="cart-progress"><p id="shipping-copy">You’re $35 away from free shipping</p><div><span id="shipping-bar"></span></div></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><img class="cart-mascot" src="assets/krums-mascot-transparent.png" alt="" /><h3>Your bag is hungry.</h3><p>Good news: joy is only one flavor away.</p><a href="#shop" id="empty-shop">Find your crunch</a></div><footer id="cart-footer" hidden><div><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="button button-primary" id="checkout-button">Checkout</button><small>Taxes and shipping calculated at checkout. Payment connection coming next.</small></footer></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
