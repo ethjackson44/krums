@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#fff8e9" />
+  <meta name="description" content="Contact the Krums team about orders, wholesale, collaborations, or anything snack-related." />
+  <title>Contact Krums</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Kalam:wght@400;700&family=Young+Serif&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260925-44" />
+</head>
+<body class="contact-body">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">
+    <p id="announcement-copy">Free shipping on orders $35+</p>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-controls="main-nav" aria-expanded="false"><span></span><span></span></button>
+    <a class="brand" href="index.html" aria-label="Krums home"><img class="brand-wordmark" src="assets/krums-packaging-wordmark.png" alt="Krums" /></a>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <a href="shop.html">Shop</a><a href="index.html#why">Why Krums?</a><a href="index.html#story">Our story</a><a href="index.html#faq">FAQ</a><a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+    <button class="bag-button" id="open-cart" aria-label="Open snack bag">Bag <span id="cart-count">0</span></button>
+  </header>
+
+  <main id="main">
+    <section class="contact-page">
+      <div class="contact-intro reveal">
+        <p class="eyebrow"><span></span> Contact Krums</p>
+        <h1>Let’s talk snacks.</h1>
+        <p>Questions, ideas, wholesale inquiries, or a very important flavor suggestion? Send it our way.</p>
+        <div class="contact-direct">
+          <span>Email us directly</span>
+          <a href="mailto:hello@krumssnacks.com">hello@krumssnacks.com</a>
+        </div>
+        <div class="contact-note"><b>Good to know</b><p>We aim to reply within two business days.</p></div>
+      </div>
+
+      <div class="contact-form-card reveal" data-delay="120">
+        <p class="eyebrow"><span></span> Leave a note</p>
+        <h2>What’s on your mind?</h2>
+        <form id="contact-form">
+          <div class="contact-field-row">
+            <label>First name<input name="name" type="text" autocomplete="given-name" required /></label>
+            <label>Email address<input name="email" type="email" autocomplete="email" required /></label>
+          </div>
+          <label>What can we help with?
+            <select name="topic" required>
+              <option value="" selected disabled>Choose a topic</option>
+              <option>Order question</option>
+              <option>Wholesale or retail</option>
+              <option>Press or collaboration</option>
+              <option>Flavor suggestion</option>
+              <option>Something else</option>
+            </select>
+          </label>
+          <label>Your message<textarea name="message" rows="6" required></textarea></label>
+          <button class="button button-primary" type="submit">Prepare email <span>↗</span></button>
+          <p class="contact-status" id="contact-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand"><img class="footer-wordmark" src="assets/krums-packaging-wordmark.png" alt="Krums" /><p>All snacks leave krums.™</p></div><div><h3>Explore</h3><a href="shop.html">Shop</a><a href="index.html#story">Our story</a><a href="index.html#faq">FAQ</a><a href="contact.html">Contact</a></div><div><h3>Say hello</h3><a href="mailto:hello@krumssnacks.com">Email us</a><a href="#">Instagram</a><a href="#">TikTok</a></div><p class="footer-legal">© <span id="year"></span> Krums. All snacks leave krums.<br /><span>Concept site · Claims subject to verification.</span></p></footer>
+
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-label="Shopping bag"><header><div><p class="eyebrow"><span></span> Your stash</p><h2>Snack bag <i id="cart-title-count">(0)</i></h2></div><button id="close-cart" aria-label="Close bag">×</button></header><div class="cart-progress"><p id="shipping-copy">You’re $35 away from free shipping</p><div><span id="shipping-bar"></span></div></div><div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><img class="cart-mascot" src="assets/krums-mascot-head.png" alt="" /><h3>Your bag is hungry.</h3><p>Good news: joy is only one flavor away.</p><a href="shop.html" id="empty-shop">Find your crunch</a></div><footer id="cart-footer" hidden><div><span>Subtotal</span><strong id="cart-total">$0.00</strong></div><button class="button button-primary" id="checkout-button">Checkout</button><small>Taxes and shipping calculated at checkout. Payment connection coming next.</small></footer></aside>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js?v=20260924-13"></script>
+</body>
+</html>
